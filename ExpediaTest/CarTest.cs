@@ -7,5 +7,6 @@ namespace ExpediaTest
 	[TestFixture()]
 	public class CarTest
 	{
+    
 	}
 }
