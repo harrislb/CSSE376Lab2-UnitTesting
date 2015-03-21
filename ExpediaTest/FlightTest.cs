@@ -52,6 +52,20 @@ namespace ExpediaTest
         {
             new Flight(dtStart, dtEnd3, negativeMiles);
         }
+
+        [Test()]
+        public void TestIfThingIsntFlight()
+        {
+            var target = new Hotel(3);
+            Assert.False(Equals(target));
+        }
+        [Test()]
+        public void TestIfFlightsArentEqual()
+        {
+            var target1 = new Flight(dtStart, dtEnd, numberMiles);
+            var target2 = new Flight(dtStart, dtEnd2, numberMiles);
+            Assert.False(target1.Equals(target2));
+        }
 		
 	}
 }
